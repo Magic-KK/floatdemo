@@ -17,7 +17,7 @@
             android:orientation="vertical">
 
             <include layout="@layout/system_float_item"></include>
-            
+
 
             <View
                 android:layout_width="match_parent"
