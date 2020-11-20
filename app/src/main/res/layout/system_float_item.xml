@@ -62,18 +62,18 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:visibility="gone"
             android:text="前台显示"
-            android:textSize="@dimen/home_default_text_size" />
+            android:textSize="@dimen/home_default_text_size"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/sys_backstage_show_btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:visibility="gone"
             android:text="后台显示"
-            android:textSize="@dimen/home_default_text_size" />
+            android:textSize="@dimen/home_default_text_size"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/sys_global_show_btn"
@@ -81,8 +81,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="全局显示"
-            android:visibility="gone"
-            android:textSize="@dimen/home_default_text_size" />
+            android:textSize="@dimen/home_default_text_size"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/sys_adsorption_btn"
@@ -93,11 +93,11 @@
             android:textSize="@dimen/home_default_text_size" />
 
         <Button
-            android:id="@+id/sys_drag_btn"
+            android:id="@+id/sys_adsorption_time_btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="关闭拖拽"
+            android:text="设置吸附时间"
             android:textSize="@dimen/home_default_text_size" />
 
         <Button
@@ -108,18 +108,20 @@
             android:textSize="@dimen/home_default_text_size" />
 
         <Button
+            android:id="@+id/sys_drag_btn"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="设置当前位置"
+            android:text="关闭拖拽"
             android:textSize="@dimen/home_default_text_size" />
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:visibility="gone"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:visibility="visible">
 
 
         <Button

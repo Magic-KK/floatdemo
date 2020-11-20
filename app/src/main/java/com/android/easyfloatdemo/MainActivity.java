@@ -1,11 +1,18 @@
 package com.android.easyfloatdemo;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.InputType;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
+import com.kk.floatlibrary.base.BaseFloatWindow;
 import com.kk.floatlibrary.util.FloatConstant;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -43,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.sys_front_show_btn).setOnClickListener(this);
         findViewById(R.id.sys_backstage_show_btn).setOnClickListener(this);
         findViewById(R.id.sys_global_show_btn).setOnClickListener(this);
+        findViewById(R.id.sys_adsorption_time_btn).setOnClickListener(this);
         sys_adsorption_btn.setOnClickListener(this);
         sys_drag_btn.setOnClickListener(this);
     }
@@ -79,6 +87,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     sys_drag_btn.setText("开启拖拽");
                 }
                 break;
+            case R.id.sys_adsorption_time_btn://系统级--》吸附时间
+//                systemFloat.setAdsorbTime(showAdsorptionTimeDialog(systemFloat.getAdsorbTime()));
+                showAdsorptionTimeDialog(systemFloat);
+                break;
         }
+    }
+
+    private void showAdsorptionTimeDialog(final BaseFloatWindow window) {
+        final EditText editText = new EditText(MainActivity.this);
+        editText.setHint(String.valueOf(window.getAdsorbTime()));
+        editText.setInputType(InputType.TYPE_CLASS_NUMBER);
+        AlertDialog.Builder inputDialog =
+                new AlertDialog.Builder(MainActivity.this);
+        inputDialog.setTitle("请输入动画时间(毫秒)").setView(editText);
+        inputDialog.setPositiveButton("确定",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        if (!TextUtils.isEmpty(editText.getText().toString())) {
+                            int timesa = Integer.parseInt(editText.getText().toString());
+                            window.setAdsorbTime(timesa);
+                        }
+                    }
+                }).show();
     }
 }

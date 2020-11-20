@@ -186,6 +186,15 @@ public abstract class BaseFloatWindow implements IBaseFloat, SystemFloatHelper.I
     }
 
     /**
+     * 获取吸附时间
+     * @return
+     */
+    public int getAdsorbTime(){
+        return mBaseHelper.mAdsorbTime;
+    }
+
+
+    /**
      * 设置吸附动画
      */
     public void setAbsorbAnimType(int type) {
