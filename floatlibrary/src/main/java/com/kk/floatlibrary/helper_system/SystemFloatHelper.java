@@ -286,6 +286,8 @@ public class SystemFloatHelper extends BaseHelper implements MyActivityLifecycle
         return false;
     }
 
+
+
     /**
      * 前后台回调
      *

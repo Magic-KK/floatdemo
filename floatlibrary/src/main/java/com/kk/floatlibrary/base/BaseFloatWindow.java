@@ -163,6 +163,19 @@ public abstract class BaseFloatWindow implements IBaseFloat, SystemFloatHelper.I
         mBaseHelper.isSelfAds(isSelf);
     }
 
+    public boolean getDragEnable() {
+        return mBaseHelper.isDragEnablel;
+    }
+
+    /**
+     * 获取当前吸附状态
+     * @return
+     */
+    public boolean getSelfAds(){
+        return mBaseHelper.isadsAnima;
+    }
+
+
     /**
      * 设置吸附时间
      *

@@ -1,6 +1,7 @@
 package com.android.easyfloatdemo;
 
 import android.app.Activity;
+import android.view.MotionEvent;
 import android.view.View;
 
 import com.kk.floatlibrary.base.BaseFloatWindow;
@@ -27,5 +28,10 @@ public class SystemFloat extends BaseFloatWindow {
     @Override
     public void getView(View view) {
 
+    }
+
+    @Override
+    public void getMotionEvent(MotionEvent event) {
+        super.getMotionEvent(event);
     }
 }

@@ -9,11 +9,11 @@ public class FloatConstant {
      */
     public static final int FLOAT_SYSTEM_WINDOW = 0;
     /**
-     * App应用内窗口 仅前台
+     * 系统级别窗口窗口 仅前台
      */
     public static final int FLOAT_APP_WINDOW = 1;
     /**
-     * App后台 仅后台
+     * 系统级别窗口 仅后台
      */
     public static final int FLOAT_BACKSTAGE_WINDOW = 2;
     /**
