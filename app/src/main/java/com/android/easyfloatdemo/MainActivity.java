@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AlertDialog.Builder inputDialog =
                 new AlertDialog.Builder(MainActivity.this);
         inputDialog.setTitle("请输入动画时间(毫秒)").setView(editText);
-        inputDialog.setPositiveButton("确定",
+        inputDialog.setPositiveButton("确认",
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
