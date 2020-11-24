@@ -7,9 +7,11 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.InputType;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.kk.floatlibrary.base.BaseFloatWindow;
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.sys_backstage_show_btn).setOnClickListener(this);
         findViewById(R.id.sys_global_show_btn).setOnClickListener(this);
         findViewById(R.id.sys_adsorption_time_btn).setOnClickListener(this);
+        findViewById(R.id.sys_setting_anima).setOnClickListener(this);
         sys_adsorption_btn.setOnClickListener(this);
         sys_drag_btn.setOnClickListener(this);
     }
@@ -88,8 +91,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.sys_adsorption_time_btn://系统级--》吸附时间
-//                systemFloat.setAdsorbTime(showAdsorptionTimeDialog(systemFloat.getAdsorbTime()));
                 showAdsorptionTimeDialog(systemFloat);
+                break;
+
+            case R.id.sys_setting_anima:  //系统级--》设置动画
+                showSettingAnimaDialog(systemFloat);
                 break;
         }
     }
@@ -111,5 +117,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         }
                     }
                 }).show();
+    }
+
+    private void showSettingAnimaDialog(final BaseFloatWindow window) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("设置动画")
+//                .setMessage("我是 v7 包里的 AlertDialog")
+                .setItems(new String[]{"先加速再减速", "匀速", "减速", "最后阶段弹球效果"}, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        window.setAbsorbAnimType(which);
+                    }
+                })
+                .show();
     }
 }

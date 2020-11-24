@@ -101,6 +101,7 @@
             android:textSize="@dimen/home_default_text_size" />
 
         <Button
+            android:id="@+id/sys_setting_anima"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
