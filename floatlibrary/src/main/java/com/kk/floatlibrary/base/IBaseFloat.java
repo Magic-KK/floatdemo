@@ -1,11 +1,7 @@
 package com.kk.floatlibrary.base;
 
-import android.app.Activity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.WindowManager;
-
-import static android.content.Context.WINDOW_SERVICE;
 
 /**
  * Created by zk on 2020/9/14

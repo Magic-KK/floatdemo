@@ -7,12 +7,11 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.InputType;
 import android.text.TextUtils;
-import android.util.Log;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.kk.floatlibrary.base.BaseFloatWindow;
 import com.kk.floatlibrary.util.FloatConstant;
@@ -122,7 +121,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void showSettingAnimaDialog(final BaseFloatWindow window) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("设置动画")
-//                .setMessage("我是 v7 包里的 AlertDialog")
                 .setItems(new String[]{"先加速再减速", "匀速", "减速", "最后阶段弹球效果"}, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

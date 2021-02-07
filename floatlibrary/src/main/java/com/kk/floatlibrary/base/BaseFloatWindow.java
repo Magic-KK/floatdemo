@@ -2,14 +2,10 @@ package com.kk.floatlibrary.base;
 
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
+
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Interpolator;
-
-import androidx.annotation.IdRes;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.kk.floatlibrary.helper_app.AppFloatHelper;
 import com.kk.floatlibrary.helper_system.SystemFloatHelper;

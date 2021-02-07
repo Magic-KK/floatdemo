@@ -1,8 +1,5 @@
 package com.kk.floatlibrary.helper_system;
 
-import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
-
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -17,11 +14,8 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.BounceInterpolator;
-import android.view.animation.TranslateAnimation;
 import android.widget.FrameLayout;
-import android.widget.Toast;
+
 
 import androidx.appcompat.app.AlertDialog;
 

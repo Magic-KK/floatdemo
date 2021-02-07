@@ -9,14 +9,11 @@ import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Binder;
 import android.os.Build;
-import android.provider.Settings;
 import android.util.Log;
 import android.widget.Toast;
 
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 public class HuaweiUtils {

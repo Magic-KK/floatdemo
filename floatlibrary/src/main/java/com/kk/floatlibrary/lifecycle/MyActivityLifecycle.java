@@ -5,8 +5,6 @@ import android.app.Application;
 import android.os.Bundle;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
 /**
  * Created by zk on 2020/9/18
