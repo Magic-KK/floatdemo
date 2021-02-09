@@ -1,1 +1,2 @@
-# floatdemo
+# EasyFloat悬浮窗
+
