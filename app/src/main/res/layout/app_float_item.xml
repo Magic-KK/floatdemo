@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="全局弹窗"
-            android:textSize="@dimen/home_default_text_size"/>
+            android:textSize="@dimen/home_default_text_size" />
 
         <Button
             android:id="@+id/sys_creat_btn"
@@ -23,7 +23,7 @@
             android:layout_weight="1"
             android:text="创建"
             android:textSize="@dimen/home_default_text_size"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/sys_show_btn"
@@ -31,7 +31,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="显示"
-            android:textSize="@dimen/home_default_text_size"/>
+            android:textSize="@dimen/home_default_text_size" />
 
         <Button
             android:id="@+id/sys_hide_btn"
@@ -39,7 +39,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="隐藏"
-            android:textSize="@dimen/home_default_text_size"/>
+            android:textSize="@dimen/home_default_text_size" />
 
 
         <Button
@@ -48,7 +48,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="销毁"
-            android:textSize="@dimen/home_default_text_size"/>
+            android:textSize="@dimen/home_default_text_size" />
 
     </LinearLayout>
 
@@ -64,7 +64,7 @@
             android:layout_weight="1"
             android:text="前台显示"
             android:textSize="@dimen/home_default_text_size"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/sys_backstage_show_btn"
@@ -73,7 +73,7 @@
             android:layout_weight="1"
             android:text="后台显示"
             android:textSize="@dimen/home_default_text_size"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/sys_global_show_btn"
@@ -82,7 +82,7 @@
             android:layout_weight="1"
             android:text="全局显示"
             android:textSize="@dimen/home_default_text_size"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/sys_adsorption_btn"
@@ -90,7 +90,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="开启吸附"
-            android:textSize="@dimen/home_default_text_size"/>
+            android:textSize="@dimen/home_default_text_size" />
 
         <Button
             android:id="@+id/sys_adsorption_time_btn"
@@ -98,7 +98,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="设置吸附时间"
-            android:textSize="@dimen/home_default_text_size"/>
+            android:textSize="@dimen/home_default_text_size" />
 
         <Button
             android:id="@+id/sys_setting_anima"
@@ -106,7 +106,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="设置动画"
-            android:textSize="@dimen/home_default_text_size"/>
+            android:textSize="@dimen/home_default_text_size" />
 
         <Button
             android:id="@+id/sys_drag_btn"
@@ -114,7 +114,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="关闭拖拽"
-            android:textSize="@dimen/home_default_text_size"/>
+            android:textSize="@dimen/home_default_text_size" />
 
 
     </LinearLayout>
@@ -126,26 +126,17 @@
 
 
         <Button
-            android:id="@+id/sys_now_position"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:text="设置当前位置"
-            android:textSize="@dimen/home_default_text_size"/>
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
-            android:text="全局显示"
-            android:textSize="@dimen/home_default_text_size"/>
-
+            android:textSize="@dimen/home_default_text_size" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@android:color/transparent"/>
+            android:background="@android:color/transparent" />
 
     </LinearLayout>
 
