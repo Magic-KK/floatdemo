@@ -133,13 +133,6 @@
             android:text="设置当前位置"
             android:textSize="@dimen/home_default_text_size"/>
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
-            android:text="全局显示"
-            android:textSize="@dimen/home_default_text_size"/>
-
 
         <Button
             android:layout_width="0dp"
