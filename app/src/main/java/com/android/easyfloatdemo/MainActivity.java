@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button sys_drag_btn;
     //系统级--》吸附
     private Button sys_adsorption_btn;
+    //系统级-->>改变位置
+    private Button sys_now_position;
+    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +45,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
         sys_drag_btn = findViewById(R.id.sys_drag_btn);
         sys_adsorption_btn = findViewById(R.id.sys_adsorption_btn);
+        sys_now_position = findViewById(R.id.sys_now_position);
+
+
     }
 
     private void initListener() {
@@ -55,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.sys_setting_anima).setOnClickListener(this);
         sys_adsorption_btn.setOnClickListener(this);
         sys_drag_btn.setOnClickListener(this);
+        sys_now_position.setOnClickListener(this);
     }
 
     @Override
@@ -96,6 +104,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.sys_setting_anima:  //系统级--》设置动画
                 showSettingAnimaDialog(systemFloat);
                 break;
+            case R.id.sys_now_position: //系统级-->改变当前位置
+
+
+                break;
+
+
         }
     }
 
